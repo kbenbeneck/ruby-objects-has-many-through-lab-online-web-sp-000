@@ -1,8 +1,8 @@
 class Artist
-attr_accessor :name, :genre, 
+attr_accessor :name, :genre,
 @@all = []
 
-  def initialize 
+  def initialize
     @@all << self
   end
 
