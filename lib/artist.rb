@@ -16,7 +16,6 @@ class Artist
     Song.new(name)
   end
 
-  end
 
   def songs
   end
