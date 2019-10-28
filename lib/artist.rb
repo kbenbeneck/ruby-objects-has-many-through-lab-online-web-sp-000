@@ -23,7 +23,6 @@ class Artist
 
   def genres
     songs.map(&:genre)
-
   end
 
 
