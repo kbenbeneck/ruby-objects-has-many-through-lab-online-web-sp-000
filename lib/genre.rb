@@ -3,16 +3,20 @@ class Genre
 
   @@all = []
 
-  def self.all
-    @@all
-  end
-
   def initialize(name)
     @name = name
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def songs
-    Songs.all { |song| song.genre == self }
+    Song.all { |song| song.genre == self }
+  end
+
+  def artist
+    songs.map(&;artist)
   end
 end
